@@ -4,17 +4,18 @@ class Provinsi {
   String nama;
   int positif;
   int sembuh;
-  int meningal;
+  int meninggal;
   int dirawat;
 
-  Provinsi({this.nama, this.positif, this.sembuh, this.meningal, this.dirawat});
+  Provinsi(
+      {this.nama, this.positif, this.sembuh, this.meninggal, this.dirawat});
 
   factory Provinsi.fromJson(Map<String, dynamic> objek) {
     return Provinsi(
         nama: objek['key'],
         positif: objek['jumlah_kasus'],
         sembuh: objek['jumlah_sembuh'],
-        meningal: objek['jumlah_meninggal'],
+        meninggal: objek['jumlah_meninggal'],
         dirawat: objek['jumlah_dirawat']);
   }
 

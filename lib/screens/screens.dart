@@ -10,3 +10,4 @@ part 'onboarding_screen.dart';
 part 'home_screen.dart';
 part 'data_provinsi_screen.dart';
 part 'splashscreen.dart';
+part 'detail_provinsi_screen.dart';

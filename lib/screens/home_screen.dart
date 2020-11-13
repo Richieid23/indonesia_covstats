@@ -64,7 +64,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             physics: NeverScrollableScrollPhysics(),
                             itemCount: 5,
                             itemBuilder: (context, i) => GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Get.to(DetailProvinsiScreen(i, snapshot));
+                              },
                               child: ItemProvinsi(i, snapshot),
                             ),
                           );

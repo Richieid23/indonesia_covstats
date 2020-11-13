@@ -28,7 +28,9 @@ class _DataProvinsiScreenState extends State<DataProvinsiScreen> {
                         physics: NeverScrollableScrollPhysics(),
                         itemCount: snapshot.data.length,
                         itemBuilder: (context, i) => GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(DetailProvinsiScreen(i, snapshot));
+                          },
                           child: ItemProvinsi(i, snapshot),
                         ),
                       );
